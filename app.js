@@ -34,7 +34,7 @@ function checkLocalStorage() {
     for(item of items) {
       listItem.innerHTML += `<li id="${item.id}">
                               <strong>${item.name}: </strong> 
-                              <em>${item.mealCalory} cal</em> 
+                              <em>${item.mealCalory} kcal</em> 
                               <a href="#"><i class="update fas fa-pencil-alt"></i></a>
                               <a href="#"><i class="delete far fa-trash-alt"></i></a>
                             </li>`;
@@ -71,7 +71,7 @@ function addMeal() {
       localStorage.setItem('items', JSON.stringify(myData))
       listItem.innerHTML += `<li id="${mealInfo.id}">
                               <strong>${mealInfo.name}: </strong> 
-                              <em>${mealInfo.mealCalory} cal</em> 
+                              <em>${mealInfo.mealCalory} kcal</em> 
                               <a href="#"><i class="update fas fa-pencil-alt"></i></a>
                               <a href="#"><i class="delete far fa-trash-alt"></i></a>
                             </li>`;
@@ -98,7 +98,7 @@ function addMeal() {
       localStorage.setItem('items', JSON.stringify(myData));
       listItem.innerHTML += `<li id="${mealInfo.id}">
                               <strong>${mealInfo.name}: </strong> 
-                              <em>${mealInfo.mealCalory} cal</em> 
+                              <em>${mealInfo.mealCalory} kcal</em> 
                               <a href="#"><i class="update fas fa-pencil-alt"></i></a>
                               <a href="#"><i class="delete far fa-trash-alt"></i></a>
                             </li>`;
@@ -156,7 +156,7 @@ function updateMealsInfo() {
   allList.forEach(function(list) {
     if(parseInt(list.getAttribute('id')) === newId) {
       list.innerHTML = `<strong>${updatedInfo.name}: </strong> 
-      <em>${updatedInfo.mealCalory} cal</em> 
+      <em>${updatedInfo.mealCalory} kcal</em> 
       <a href="#"><i class="update fas fa-pencil-alt"></i></a>
       <a href="#"><i class="delete far fa-trash-alt"></i></a>`;
     }
