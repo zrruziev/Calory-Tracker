@@ -1,0 +1,206 @@
+body {
+  font-family: 'Spartan', sans-serif;
+  background-color: #fbffff;
+}
+
+nav {
+  font-weight: 600;
+  color: white;
+  background-color: #486aff;
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  nav {
+    gap: 2vw;
+  }
+}
+
+nav h1 {
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  nav h1 {
+    margin-right: 0;
+    width: 50%;
+  }
+}
+
+nav button {
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 3px 5px .1px grey;
+  border: none;
+  outline: none;
+  background-color: #889eff;
+  padding: 0 20px 0 20px;
+  height: 35px;
+  margin: auto 0 auto 0;
+  cursor: pointer;
+}
+
+nav button:hover {
+  transform: translateY(0);
+}
+
+nav button:active {
+  background-color: #94a7ff;
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px .1px grey;
+}
+
+.container {
+  width: 60vw;
+  margin: auto;
+}
+
+.container .content1 {
+  box-shadow: 1px 1px 10px grey;
+  margin-top: 5px;
+  padding: 10px 15px;
+  border: 1px solid #d8d8d8;
+}
+
+.container .content1 .adding-meal {
+  padding: 10px 0 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+
+.container .content1 label, .container .content1 input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: small;
+}
+
+.container .content1 input::placeholder {
+  color: #d6d6d6;
+}
+
+.container .content1 input {
+  padding: 5px;
+  border-bottom: 2px solid #c2c2c2;
+}
+
+.container .content1 label:focus, .container .content1 input:focus {
+  border-bottom: 2px solid #00f000;
+}
+
+.container .buttons {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .buttons .btn {
+  font-weight: 700;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  box-shadow: 0 3px 5px .1px grey;
+  cursor: pointer;
+}
+
+.container .buttons .btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px .1px grey;
+}
+
+.container .buttons .btn-add {
+  color: white;
+  background-color: #0551df;
+}
+
+.container .buttons .btn-update {
+  color: white;
+  background-color: #ff9900;
+}
+
+.container .buttons .btn-delete {
+  color: white;
+  background-color: #ff2600;
+}
+
+.container .buttons .btn-back {
+  color: white;
+  background-color: #9c9c9c;
+}
+
+.container .content2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.container .content2 h2 {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.container .content2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container .content2 ul li {
+  display: grid;
+  grid-template-columns: 5fr 7fr .7fr .4fr;
+  padding: 5px;
+  border: .5px solid grey;
+}
+
+.container .content2 ul li strong {
+  display: block;
+  overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  .container .content2 ul li {
+    grid-template-columns: 5fr 5fr 1.2fr .7fr;
+  }
+  .container .content2 ul li strong {
+    display: block;
+    overflow-x: hidden;
+  }
+}
+
+.container .content2 ul li a {
+  text-align: right;
+  margin-right: auto;
+}
+
+.container .content2 ul li a .delete {
+  color: red;
+}
+
+.container .content2 ul li a:active, .container .content2 ul li .delete:active {
+  color: #00d400;
+}
+
+.container .content2 ul li:not(:last-child) {
+  border-bottom: none;
+}
+
+@media (max-width: 1800px) {
+  .container {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

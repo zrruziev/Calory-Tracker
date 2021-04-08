@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ca5f52e9a5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Calory Tracker</title>
+</head>
+<body>
+  <nav>
+    <h1>Calory Tracker</h1>
+    <button class="btn-clear">Clear All</button>
+  </nav>
+  <div class="container">
+    <div class="content1">
+      <h4>Add Meal / Food Item</h4>
+      <div class="adding-meal">
+        <label for="meal">Meal</label>
+        <label for="calory">Calories</label>
+        <input type="text" id="meal" placeholder="Add Item" required>
+        <input type="number" id="calory" placeholder="Add Calories" required>
+      </div>
+      <div class="buttons">
+        <div class="add-update-delete">
+          <button class="btn btn-add" id="addBtn"><i class="fas fa-plus"></i> Add Meal</button>
+          <button class="btn btn-update"><i class="fas fa-edit"></i> Update</button>
+        </div>
+        <div class="back">
+          <button class="btn btn-back"><i class="fas fa-chevron-circle-left"></i> Back</button>
+        </div>
+      </div>
+    </div>
+    <div class="content2">
+      <h2>Total Calories: </h2>
+      <div class="added-meals">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
